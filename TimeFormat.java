@@ -17,10 +17,9 @@ public class TimeFormat {
 		if (minutes < 10) minutesText = "0" + minutes;
 		else minutesText = "" + minutes;
 
-		if (hours == 12) System.out.println(hours + ":" + minutesText + "PM");
-		if (hours > 12 && hours < 20) System.out.println("0" + (hours - 12) + ":" + minutesText + "PM");
-		if (hours > 20 && hours < 24) System.out.println((hours - 12) + ":" + minutesText + "PM");
-		if (hours < 12 && hours > 9) System.out.println(hours + ":" + minutesText + "AM");
-		if (hours < 10) System.out.println("0" + hours + ":" + minutesText + "AM");
+		if (hours == 12) System.out.print(hours + ":" + minutesText + "PM");
+		if (hours > 12 && hours < 20) System.out.print("0" + (hours - 12) + ":" + minutesText + "PM");
+		if (hours > 20 && hours < 24) System.out.print((hours - 12) + ":" + minutesText + "PM");
+		if (hours < 12) System.out.print(hours + ":" + minutesText + "AM");
 	}
 }
